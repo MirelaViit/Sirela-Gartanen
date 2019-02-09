@@ -1,0 +1,539 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-container {
+  display: grid;
+  padding-top: 20px;
+  grid-template-columns: 15% 35% 35% 15%;
+  background-color: rgb(40, 40, 40);
+  height: 40%;
+}
+
+.header-image-container {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  height: 100%;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.header-text {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  padding-top: 40px;
+  color: white;
+}
+.header-text h2 {
+  text-transform: uppercase;
+}
+
+.header-lower-text h3 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: lighter;
+}
+
+.header-text-straight {
+  color: grey;
+  font-weight: lighter;
+  text-shadow: 1px 1px 1px rgb(240, 236, 236);
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+/* upper banner is part of the header grid */
+.header-lower-text {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: #438cd1;
+  padding: 20px 30px;
+  line-height: 40px;
+  position: relative;
+}
+/* this is the little buble speech triangle thingy code also remeber that element has to have relative postion */
+.header-lower-text::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 0px;
+  height: Opx;
+  width: 0px;
+  border-top: 50px solid #438cd1;
+  border-right: 50px solid transparent;
+}
+/* this is the little buble speech triangle thingy code */
+.header-button2-container {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  background-color: #438cd1;
+
+  text-align: right;
+  padding: 20px 20px;
+}
+
+.header-button1 {
+  background-color: #438cd1;
+
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 13px;
+  margin: 4px 2px;
+  border-radius: 2px;
+  font-weight: lighter;
+  text-shadow: 1px 1px 1px rgb(240, 236, 236);
+}
+
+.header-button2 {
+  background-color: rgb(240, 243, 247);
+  text-transform: uppercase;
+  display: inline-block;
+  border: none;
+  color: rgb(119, 115, 115);
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+/* body*/
+
+/* first border- 40 round is 40 times reapet */
+.border1 {
+  border-top: solid 8px;
+  border-image: url(../images/Border-BG.jpg) 40 round;
+}
+
+body {
+  background-color: #efefef;
+}
+
+/* features- first sectin row under header */
+.features-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 15%;
+}
+
+.features {
+  text-align: center;
+  margin: 5px 20px;
+  line-height: 20px;
+  color: #404040;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*  part of the text put in span in class and changed to lighter font  */
+.features-heading-light {
+  font-weight: 100;
+}
+/* font awsome icons * class fas*/
+
+.fas {
+  /* font-size: 30px; */
+  background: #404040;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  vertical-align: middle;
+  color: whitesmoke;
+}
+
+.features-container .fas{
+  line-height: 60px;
+}
+
+.features-button {
+  background-color: #438cd1;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  margin: 4px 2px;
+  border-radius: 2px;
+  font-weight: lighter;
+  text-shadow: 1px 1px 1px rgb(240, 236, 236);
+}
+
+/* border2 */
+
+.border2-container {
+  display: grid;
+  grid-template-columns: 15% 30% 10% 30% 15%;
+  height: 20px;
+}
+.border2-left {
+  grid-column: 2 / 3;
+  border-top: 9px solid;
+  padding: 15px;
+  border-image: url(../images/Border-BG.jpg) 40 round;
+  height: 15px;
+}
+
+.border2-right {
+  grid-column: 4 / 5;
+  border-top: 9px solid;
+  padding: 15px;
+  border-image: url(../images/Border-BG.jpg) 40 round;
+}
+
+.border2-text {
+  grid-column: 3 / 4;
+  padding: 5px 5px;
+  line-height: 2px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* recent work line* second section under header*/
+
+.recent-work-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 15%;
+}
+
+.recent-work-container img {
+  width: 22vw;
+}
+.recent-work-item {
+  text-align: center;
+  background-color: white;
+  margin: 10px;
+}
+
+.recent-work-text {
+  background-color: white;
+  text-align: left;
+  line-height: 1.2;
+  padding: 15px 15px 40px 15px;
+  position: relative;
+}
+
+/* this is the little buble speech triangle thingy code */
+.recent-work-text::after {
+  content: "";
+  position: absolute;
+  top: 7vw;
+  left: 0px;
+  height: Opx;
+  width: 0px;
+  border-top: 50px solid white;
+  border-right: 50px solid transparent;
+}
+/* this is the little buble speech triangle thingy code */
+
+/* third row/section under header titled "testimonials and developemnt" */
+
+.tes-dev-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr 3vw;
+  grid-template-areas:
+    "tes-title tes-title dev-title"
+    "tes1 tes2 des"
+    "tes3 tes4 des"
+    "lower-banner lower-banner lower-banner";
+  margin: 0px 15%;
+  grid-gap: 20px;
+}
+
+.border3a {
+  grid-area: tes-title;
+  height: 9px;
+  width: 100%;
+  background-image: url(../images/Border-BG.jpg);
+  background-size: 70px 60px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.border3a p {
+  background-color: #efefef;
+  display: inline;
+  padding: 10px 20px;
+}
+
+.border3b {
+  grid-area: dev-title;
+  height: 9px;
+  width: 100%;
+  background-image: url(../images/Border-BG.jpg);
+  background-size: 70px 60px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.border3b p {
+  background-color: #efefef;
+  display: inline;
+  padding: 10px 20px;
+}
+
+.testimonial {
+  background-color: white;
+  line-height: 1.3em;
+  padding: 10px 15px 30px 15px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.testimonial1 {
+  grid-area: tes1;
+}
+
+/* this is the little buble speech triangle thingy code */
+.testimonial::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 0px;
+  height: Opx;
+  width: 0px;
+  border-top: 50px solid white;
+  border-right: 50px solid transparent;
+}
+/* this is the little buble speech triangle thingy code */
+
+.testimonial2 {
+  grid-area: tes2;
+}
+
+.testimonial3 {
+  grid-area: tes3;
+}
+
+.testimonial4 {
+  grid-area: tes4;
+}
+
+/* .content is container for tabs and 2 different contents that change development and production */
+
+.content {
+  height: 80%;
+}
+
+.development {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  line-height: 1.3em;
+  padding: 15px 15px 24px 15px;
+}
+
+.production {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  line-height: 1.3em;
+  padding: 15px 15px 24px 15px;
+}
+/* we removed grid area from development and production and put it in tabs (now new main container)*/
+
+.desing-button {
+  align-self: flex-end;
+  background-color: #438cd1;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: right;
+  text-decoration: none;
+  font-size: 10px;
+  margin: 4px 2px;
+  border-radius: 2px;
+  font-weight: lighter;
+  text-shadow: 1px 1px 1px rgb(240, 236, 236);
+  float: right;
+}
+
+/*Tabs*/
+/* we removed grid area from development and production and put it in tabs (now new main container)*/
+.tabs {
+  margin-top: 0px;
+  grid-area: des;
+}
+.tabs input {
+  display: none;
+}
+.tabs label {
+  display: inline-block;
+  padding: 10px 0px;
+  margin: 0 -2px;
+  width: 40%; /* =100/tabs number */
+  font-size: 11px;
+
+  text-align: center;
+}
+.tabs label:hover {
+  cursor: pointer;
+}
+.tabs input:checked + label {
+  /* 'border-width: 1px 1px 0 1px;  */
+  font-weight: bold;
+  background-color: white;
+}
+.tabs #tab1:checked ~ .content .development,
+.tabs #tab2:checked ~ .content .production {
+  display: block;
+}
+
+.tabs .content > div {
+  display: none;
+  padding-top: 20px;
+  text-align: left;
+  /*height: 192px;*/
+  overflow: auto;
+}
+
+/*BOTTOM BANNER/border 3*/
+
+.bottom-banner {
+  grid-area: lower-banner;
+  background-color: #438cd1;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* this is the little buble speech triangle thingy code */
+.bottom-banner::after {
+  content: "";
+  position: absolute;
+  bottom:-40px;
+  left: 0px;
+  height: Opx;
+  width: 0px;
+  border-top: 40px solid #438cd1;
+  border-right: 40px solid transparent;
+}
+/* this is the little buble speech triangle thingy code */
+
+.bottom-banner button {
+  background-color: rgb(240, 243, 247);
+  border: none;
+  color: rgb(119, 115, 115);
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 4px 2px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+.bottom-banner p {
+  color: white;
+  padding: 15px 30px;
+}
+
+/* footer */
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 13% 1fr 1fr 1fr 1fr 13%;
+  background-color: #404040;
+  padding-top: 40px;
+  grid-gap: 30px;
+}
+.footer-about {
+  grid-column: 2 / 3;
+  text-align: justify;
+  color: grey;
+  text-shadow: 1px 1px 1px 1px;
+}
+
+.footer-item h5 {
+  color: white;
+}
+
+.footer-twitter {
+  grid-column: 3 / 4;
+  text-align: justify;
+  color: grey;
+  text-shadow: 1px 1px 1px 1px;
+}
+
+.footer-latestposts {
+  grid-column: 4 / 5;
+  text-align: justify;
+  color: grey;
+  text-shadow: 1px 1px 1px 1px;
+  line-height: 20px;
+}
+
+hr {
+  border: solid 2px rgb(51, 49, 49);
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  padding: 5px 0px;
+  margin: 2px;
+}
+
+.footer-flickr {
+  grid-column: 5 / 6;
+}
+
+.flickr-img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.flickr-img-container img {
+  width: 3.7vw;
+  height: 3.7vw;
+}
+
+/* nav footer */
+
+.footer-link-banner {
+  display: grid;
+  grid-template-columns: 13% 1fr 1fr 1fr 1fr 13%;
+  grid-gap: 30px;
+  background-color: rgb(39, 41, 37);
+}
+
+.footer-link-banner-text {
+  grid-column: 2 / 4;
+  color: grey;
+  padding-top: 15px;
+  font-weight: lighter;
+}
+
+.footer-link-banner-icons {
+  grid-column: 5 / 6;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.footer-link-banner-icon-start {
+  grid-column: 6 / 7;
+  font-size: 50px;
+  color: black; 
+}
+
+/* changing the color of icon by targeting it in parent and overriding previous fas class icons styles */
+ .footer-link-banner .fas {
+  color: black; !important
+} 
